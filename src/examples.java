@@ -14,9 +14,16 @@ public class examples {
         System.out.println(ex.commonEnd(arr1,arr2));*/
 
         //task 3
-        int[] arr = {1, 2, 3};
+       /* int[] arr = {1, 2, 3};
         examples ex3= new examples();
         ex3.reverse3(arr);
+*/
+        // task 4
+        int [] arr1 = {1, 2, 3};
+        int [] arr2 = {4, 5, 6};
+        examples ex4 = new examples();
+        ex4.middleWay(arr1,arr2);
+
 
     }
 
@@ -40,6 +47,11 @@ public class examples {
        System.out.println(java.util.Arrays.toString(newArray));
 
     }
+    public void middleWay(int []arr1 , int []arr2){
+        int [] newArr = {arr1[1],arr2[1]};
+        System.out.println(java.util.Arrays.toString(newArr));
+    }
+
 }
 
 
