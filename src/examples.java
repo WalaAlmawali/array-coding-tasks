@@ -56,9 +56,15 @@ public class examples {
         System.out.println(ex10.sameFirstLast(arr));
 */
         // task 11
-        int [] arr = {1, 2, 3};
+        /*int [] arr = {1, 2, 3};
         examples ex11 = new examples();
         ex11.maxEnd3(arr);
+        */
+        // task 12
+        int [] arr = {1, 2, 3};
+        examples ex12 = new examples();
+        ex12.makeEnds(arr);
+
     }
 
 
@@ -138,7 +144,13 @@ public void maxEnd3(int[] arr){
     System.out.println(java.util.Arrays.toString(arr));
 }
 
+public void makeEnds(int [] arr){
+        if(arr.length>= 1){
+            int [] newArr = {arr[0],arr[arr.length-1]};
+            System.out.println(java.util.Arrays.toString(newArr));
 
+        }
+}
 
 }
 
