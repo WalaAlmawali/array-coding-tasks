@@ -77,10 +77,20 @@ public class examples {
         ex14.start1(a,b);
 */
         // task 15
-        int [] a={4,4};
+        /*int [] a={4,4};
         int [] b={2,2};
         examples ex15 = new examples();
         ex15.plusTwo(a,b);
+        */
+        // task 16
+       /* int [] b={1,2,3};
+        examples ex16 = new examples();
+        ex16.maxTriple(b);
+        */
+
+        //task 17
+
+
     }
 
 
@@ -192,6 +202,17 @@ public void plusTwo(int[]a,int[]b){
             System.out.println(java.util.Arrays.toString(plusArray));
 
         }
+}
+
+public void maxTriple(int [] arr ){
+       if(arr.length>= 1 && arr.length % 2 != 0) {
+           int first= arr[0];
+           int middle = arr[arr.length /2];
+           int last = arr[arr.length-1];
+
+           int max= Math.max(first,Math.max(middle,last));
+           System.out.println(max);
+       }
 }
 
 }
