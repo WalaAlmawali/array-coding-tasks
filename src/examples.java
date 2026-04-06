@@ -25,10 +25,15 @@ public class examples {
         ex4.middleWay(arr1,arr2);*/
 
         // task 5
-        int [] arr = {4,2};
+       /* int [] arr = {4,2};
         examples ex5 = new examples();
        System.out.println(ex5.no23(arr));
 
+*/
+        // task 6
+        int [] arr = {2,3,5};
+        examples ex6 = new examples();
+        ex6.fix23(arr);
 
     }
 
@@ -62,6 +67,16 @@ public class examples {
             return false;
         }
         return true;
+    }
+
+    public void  fix23(int [] arr){
+        for(int i=0; i<arr.length;i++){
+            if(arr[i]==2 && arr[i+1]==3){
+                arr[i+1] = 0;
+            }
+        }
+        System.out.println(java.util.Arrays.toString(arr));
+
     }
 
 }
