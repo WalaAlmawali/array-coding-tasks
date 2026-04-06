@@ -71,11 +71,16 @@ public class examples {
         ex13.makeLast(arr);
 */
         // task 14
-        int [] a={7, 2, 3};
+        /*int [] a={7, 2, 3};
         int [] b={1};
         examples ex14 = new examples();
         ex14.start1(a,b);
-
+*/
+        // task 15
+        int [] a={4,4};
+        int [] b={2,2};
+        examples ex15 = new examples();
+        ex15.plusTwo(a,b);
     }
 
 
@@ -179,6 +184,14 @@ public void start1(int[]a,int[]b){
             count++;
         }
         System.out.println(count);
+}
+
+public void plusTwo(int[]a,int[]b){
+        if(a.length == 2 && b.length == 2){
+            int [] plusArray = {a[0],a[1],b[0],b[1]};
+            System.out.println(java.util.Arrays.toString(plusArray));
+
+        }
 }
 
 }
