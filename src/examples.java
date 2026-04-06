@@ -115,11 +115,15 @@ public class examples {
         */
 
         // task 22
-        int [] a ={2,3};
+       /* int [] a ={2,3};
         examples ex22 = new examples();
         System.out.println(ex22.double23(a)) ;
-
-
+*/
+        // task 23
+        int [] a ={1,2};
+        int [] b ={3,4};
+        examples ex23 = new examples();
+        ex23.biggerTwo(a,b);
 
     }
 
@@ -297,6 +301,19 @@ public boolean double23(int[] arr){
     }
     return false;
 }
+public void biggerTwo(int[] a,int[] b){
+        if(a.length == 2 && b.length == 2 ){
+            int aSum = a[0] + a[1];
+            int bSum = b[0] + b[1];
+
+            if(aSum>bSum){
+                System.out.println(java.util.Arrays.toString(a));
+            }else {
+                System.out.println(java.util.Arrays.toString(b));
+            }
+        }
+}
+
 }
 
 
