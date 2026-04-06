@@ -89,13 +89,14 @@ public class examples {
         */
 
         //task 17
-        int [] a={1,4};
+       /* int [] a={1,4};
         int [] b={1, 2, 3};
         examples ex17 = new examples();
-        ex17.make2(a,b);
+        ex17.make2(a,b);*/
 
         //task 18
-
+        examples ex18 = new examples();
+        ex18.makePi();
 
     }
 
@@ -235,7 +236,10 @@ public void make2(int[]a, int[]b) {
     }
 
 }
-
+public void makePi(){
+        int[] arr={3,1,4};
+    System.out.println(java.util.Arrays.toString(arr));
+}
 }
 
 
