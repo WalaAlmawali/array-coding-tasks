@@ -51,10 +51,14 @@ public class examples {
         System.out.println(ex9.unlucky1(arr));
 */
         // task 10
-        int [] arr = {1, 2, 3, 1};
+       /* int [] arr = {1, 2, 3, 1};
         examples ex10 = new examples();
         System.out.println(ex10.sameFirstLast(arr));
-
+*/
+        // task 11
+        int [] arr = {1, 2, 3};
+        examples ex11 = new examples();
+        ex11.maxEnd3(arr);
     }
 
 
@@ -126,7 +130,13 @@ public boolean sameFirstLast(int [] arr){
       return false;
 }
 
-
+public void maxEnd3(int[] arr){
+       int max = Math.max(arr[0],arr[2]);
+    for(int i=0; i<arr.length;i++){
+        arr[i]= max;
+    }
+    System.out.println(java.util.Arrays.toString(arr));
+}
 
 
 
