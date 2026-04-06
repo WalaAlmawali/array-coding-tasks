@@ -109,10 +109,15 @@ public class examples {
        ex20.sum2(a);*/
 
        // task 21
-        int [] a ={2,5};
+        /*int [] a ={2,5};
         examples ex21 = new examples();
         System.out.println(ex21.has23(a));
+        */
 
+        // task 22
+        int [] a ={2,3};
+        examples ex22 = new examples();
+        System.out.println(ex22.double23(a)) ;
 
 
 
@@ -281,6 +286,16 @@ public boolean has23(int [] arr){
             }
         }
      return false;
+}
+
+public boolean double23(int[] arr){
+    if(arr.length ==2){
+        if((arr[0]==2 && arr[1]==2) || (arr[0]==3 && arr[1]==3)){
+            return true;
+        }
+
+    }
+    return false;
 }
 }
 
