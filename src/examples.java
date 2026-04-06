@@ -95,9 +95,13 @@ public class examples {
         ex17.make2(a,b);*/
 
         //task 18
-        examples ex18 = new examples();
-        ex18.makePi();
+        /*examples ex18 = new examples();
+        ex18.makePi();*/
 
+        // task 19
+        int [] b={1, 2, 3};
+        examples ex19 = new examples();
+        ex19.rotateLeft3(b);
     }
 
 
@@ -239,6 +243,11 @@ public void make2(int[]a, int[]b) {
 public void makePi(){
         int[] arr={3,1,4};
     System.out.println(java.util.Arrays.toString(arr));
+}
+
+public void rotateLeft3(int [] arr){
+        int [] newArr = {arr[1],arr[2],arr[0]};
+    System.out.println(java.util.Arrays.toString(newArr));
 }
 }
 
