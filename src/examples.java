@@ -46,9 +46,14 @@ public class examples {
         ex8.midThree(arr);*/
 
         // task 9
-        int [] arr = {1, 1, 1};
+        /*int [] arr = {1, 1, 1};
         examples ex9 = new examples();
         System.out.println(ex9.unlucky1(arr));
+*/
+        // task 10
+        int [] arr = {1, 2, 3, 1};
+        examples ex10 = new examples();
+        System.out.println(ex10.sameFirstLast(arr));
 
     }
 
@@ -114,6 +119,13 @@ public class examples {
         }
         return false;
     }
+public boolean sameFirstLast(int [] arr){
+      if((arr.length>= 1)  && (arr[0]==arr[arr.length -1])){
+          return true;
+      }
+      return false;
+}
+
 
 
 
