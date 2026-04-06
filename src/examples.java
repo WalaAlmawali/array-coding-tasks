@@ -89,6 +89,12 @@ public class examples {
         */
 
         //task 17
+        int [] a={1,4};
+        int [] b={1, 2, 3};
+        examples ex17 = new examples();
+        ex17.make2(a,b);
+
+        //task 18
 
 
     }
@@ -213,6 +219,21 @@ public void maxTriple(int [] arr ){
            int max= Math.max(first,Math.max(middle,last));
            System.out.println(max);
        }
+}
+
+public void make2(int[]a, int[]b) {
+    if (a.length >= 2) {
+        int[] newArray ={a[0], a[1]};
+        System.out.println(java.util.Arrays.toString(newArray));
+
+    } else if (a.length == 1) {
+        int[] newArray = {a[0], b[0]};
+        System.out.println(java.util.Arrays.toString(newArray));
+    } else {
+        int[] newArray = {b[0], b[1]};
+        System.out.println(java.util.Arrays.toString(newArray));
+    }
+
 }
 
 }
