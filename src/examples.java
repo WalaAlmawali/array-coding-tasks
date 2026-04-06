@@ -19,10 +19,15 @@ public class examples {
         ex3.reverse3(arr);
 */
         // task 4
-        int [] arr1 = {1, 2, 3};
+        /*int [] arr1 = {1, 2, 3};
         int [] arr2 = {4, 5, 6};
         examples ex4 = new examples();
-        ex4.middleWay(arr1,arr2);
+        ex4.middleWay(arr1,arr2);*/
+
+        // task 5
+        int [] arr = {4,2};
+        examples ex5 = new examples();
+       System.out.println(ex5.no23(arr));
 
 
     }
@@ -50,6 +55,13 @@ public class examples {
     public void middleWay(int []arr1 , int []arr2){
         int [] newArr = {arr1[1],arr2[1]};
         System.out.println(java.util.Arrays.toString(newArr));
+    }
+    public boolean no23(int [] arr){
+
+        if (arr[0]==2 || arr[1]==2 || arr[0]==3 || arr[1]==3){
+            return false;
+        }
+        return true;
     }
 
 }
