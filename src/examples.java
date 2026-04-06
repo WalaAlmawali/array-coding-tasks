@@ -120,10 +120,16 @@ public class examples {
         System.out.println(ex22.double23(a)) ;
 */
         // task 23
-        int [] a ={1,2};
+       /* int [] a ={1,2};
         int [] b ={3,4};
         examples ex23 = new examples();
-        ex23.biggerTwo(a,b);
+        ex23.biggerTwo(a,b);*/
+
+        // task 24
+        int [] a ={1,2,3,4};
+
+        examples ex24 = new examples();
+        ex24.swapEnds(a);
 
     }
 
@@ -311,6 +317,15 @@ public void biggerTwo(int[] a,int[] b){
             }else {
                 System.out.println(java.util.Arrays.toString(b));
             }
+        }
+}
+
+public void swapEnds(int[] arr){
+        if(arr.length>=1){
+            int temp = arr[0];
+            arr[0]= arr[arr.length-1];
+            arr[arr.length -1]= temp;
+            System.out.println(java.util.Arrays.toString(arr));
         }
 }
 
