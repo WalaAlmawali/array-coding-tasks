@@ -1,4 +1,6 @@
+
 public class examples {
+
 
     public static void main(String[] args) {
       // task 1
@@ -6,10 +8,15 @@ public class examples {
        System.out.println(firstLast6(nums));*/
 
         // task 2
-        int[] arr1 = {1, 2, 3, 7};
+       /* int[] arr1 = {1, 2, 3, 7};
         int[] arr2 = {1,3};
         examples ex = new examples();
-        System.out.println(ex.commonEnd(arr1,arr2));
+        System.out.println(ex.commonEnd(arr1,arr2));*/
+
+        //task 3
+        int[] arr = {1, 2, 3};
+        examples ex3= new examples();
+        ex3.reverse3(arr);
 
     }
 
@@ -26,6 +33,12 @@ public class examples {
             return true;
         }
         return false;
+    }
+
+    public void reverse3(int [] arr ){
+       int [] newArray = {arr[2],arr[1],arr[0]};
+       System.out.println(java.util.Arrays.toString(newArray));
+
     }
 }
 
