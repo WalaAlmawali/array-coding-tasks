@@ -1,8 +1,15 @@
 public class examples {
 
     public static void main(String[] args) {
-        int[] nums = {1, 2, 3, 7};
-        System.out.println(firstLast6(nums));
+      // task 1
+        /*int[] nums = {1, 2, 3, 7};
+       System.out.println(firstLast6(nums));*/
+
+        // task 2
+        int[] arr1 = {1, 2, 3, 7};
+        int[] arr2 = {1,3};
+        examples ex = new examples();
+        System.out.println(ex.commonEnd(arr1,arr2));
 
     }
 
@@ -14,7 +21,14 @@ public class examples {
             return false;
 
     }
+    public  boolean commonEnd(int []arr1,int []arr2){
+        if((arr1[0] == arr2[0]) || (arr1[arr1.length -1] == arr2[arr2.length -1])){
+            return true;
+        }
+        return false;
+    }
 }
+
 
 
 
