@@ -99,9 +99,15 @@ public class examples {
         ex18.makePi();*/
 
         // task 19
-        int [] b={1, 2, 3};
+      /*  int [] b={1, 2, 3};
         examples ex19 = new examples();
-        ex19.rotateLeft3(b);
+        ex19.rotateLeft3(b);*/
+
+        // task 20
+        int [] a ={1, 2, 3};
+        examples ex20 = new examples();
+       ex20.sum2(a);
+
     }
 
 
@@ -248,6 +254,16 @@ public void makePi(){
 public void rotateLeft3(int [] arr){
         int [] newArr = {arr[1],arr[2],arr[0]};
     System.out.println(java.util.Arrays.toString(newArr));
+}
+
+public void sum2(int[] arr){
+        if(arr.length>= 2){
+            System.out.println( arr[0] + arr[1]) ;
+        } else if (arr.length == 1) {
+            System.out.println(arr[0]);
+        }else{
+            System.out.println("0");
+        }
 }
 }
 
