@@ -31,9 +31,14 @@ public class examples {
 
 */
         // task 6
-        int [] arr = {2,3,5};
+        /*int [] arr = {2,3,5};
         examples ex6 = new examples();
         ex6.fix23(arr);
+*/
+        // task 7
+        int [] arr = {1, 2};
+        examples ex7 = new examples();
+        ex7.makeMiddle(arr);
 
     }
 
@@ -77,6 +82,12 @@ public class examples {
         }
         System.out.println(java.util.Arrays.toString(arr));
 
+    }
+
+    public void makeMiddle(int []arr){
+        int middle = arr.length /2;
+        int [] newArr ={arr[middle -1],arr[middle]};
+        System.out.println(java.util.Arrays.toString(newArr));
     }
 
 }
