@@ -132,10 +132,17 @@ public class examples {
         ex24.swapEnds(a);
         */
         // task 25
-        int [] a ={1,2,3};
-
+       /* int [] a ={1,2,3};
         examples ex25 = new examples();
-        ex25.frontPiece(a);
+        ex25.frontPiece(a);*/
+
+        // task 26
+        int [] a ={1,2,3};
+        int [] b ={7, 9, 8};
+        examples ex26 = new examples();
+        ex26.front11(a,b);
+
+
     }
 
 
@@ -344,7 +351,10 @@ public void frontPiece(int [] arr){
             System.out.println(java.util.Arrays.toString(newArr));
         }
 }
-
+public void front11(int [] a, int [] b){
+        int [] newArray = {a[0],b[0]};
+    System.out.println(java.util.Arrays.toString(newArray));
+}
 }
 
 
