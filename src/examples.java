@@ -66,9 +66,15 @@ public class examples {
         ex12.makeEnds(arr);
 */
         // task 13
-        int [] arr = {1, 2};
+        /*int [] arr = {1, 2};
         examples ex13 = new examples();
         ex13.makeLast(arr);
+*/
+        // task 14
+        int [] a={7, 2, 3};
+        int [] b={1};
+        examples ex14 = new examples();
+        ex14.start1(a,b);
 
     }
 
@@ -163,8 +169,17 @@ public void makeLast(int[]arr){
     System.out.println(java.util.Arrays.toString(newArray));
 
 }
+public void start1(int[]a,int[]b){
+        int count = 0;
 
-
+        if(a[0]==1){
+            count++;
+        }
+        if(b[0]==1){
+            count++;
+        }
+        System.out.println(count);
+}
 
 }
 
