@@ -36,11 +36,17 @@ public class examples {
         ex6.fix23(arr);
 */
         // task 7
-        int [] arr = {1, 2};
+        /*int [] arr = {1, 2};
         examples ex7 = new examples();
-        ex7.makeMiddle(arr);
+        ex7.makeMiddle(arr);*/
 
+        // task 8
+        int [] arr = {1, 2, 3, 4, 5};
+        examples ex8 = new examples();
+        ex8.midThree(arr);
     }
+
+
 
     public static boolean firstLast6(int[] nums) {
 
@@ -87,6 +93,12 @@ public class examples {
     public void makeMiddle(int []arr){
         int middle = arr.length /2;
         int [] newArr ={arr[middle -1],arr[middle]};
+        System.out.println(java.util.Arrays.toString(newArr));
+    }
+
+    public void midThree(int [] arr){
+        int middle = arr.length /2;
+        int [] newArr ={arr[middle-1],arr[middle ],arr[middle+1]};
         System.out.println(java.util.Arrays.toString(newArr));
     }
 
