@@ -104,9 +104,17 @@ public class examples {
         ex19.rotateLeft3(b);*/
 
         // task 20
-        int [] a ={1, 2, 3};
+       /* int [] a ={1, 2, 3};
         examples ex20 = new examples();
-       ex20.sum2(a);
+       ex20.sum2(a);*/
+
+       // task 21
+        int [] a ={2,5};
+        examples ex21 = new examples();
+        System.out.println(ex21.has23(a));
+
+
+
 
     }
 
@@ -264,6 +272,15 @@ public void sum2(int[] arr){
         }else{
             System.out.println("0");
         }
+}
+
+public boolean has23(int [] arr){
+        if(arr.length ==2){
+            if(arr[0]==2 || arr[1]==2 || arr[0]==3 || arr[1]==3){
+                return true;
+            }
+        }
+     return false;
 }
 }
 
