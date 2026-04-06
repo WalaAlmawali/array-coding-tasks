@@ -41,9 +41,15 @@ public class examples {
         ex7.makeMiddle(arr);*/
 
         // task 8
-        int [] arr = {1, 2, 3, 4, 5};
+      /*  int [] arr = {1, 2, 3, 4, 5};
         examples ex8 = new examples();
-        ex8.midThree(arr);
+        ex8.midThree(arr);*/
+
+        // task 9
+        int [] arr = {1, 1, 1};
+        examples ex9 = new examples();
+        System.out.println(ex9.unlucky1(arr));
+
     }
 
 
@@ -101,6 +107,16 @@ public class examples {
         int [] newArr ={arr[middle-1],arr[middle ],arr[middle+1]};
         System.out.println(java.util.Arrays.toString(newArr));
     }
+
+    public boolean unlucky1(int [] arr){
+        if((arr[0]==1 && arr[1]==3) || (arr[1]==1 && arr[2]==3)){
+            return true;
+        }
+        return false;
+    }
+
+
+
 
 }
 
